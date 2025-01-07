@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Posts;
+namespace App\Models;
 
 use App\Models\Profiles\User;
 use App\Models\Posts\Likes;
