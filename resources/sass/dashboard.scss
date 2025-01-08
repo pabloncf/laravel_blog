@@ -1,0 +1,42 @@
+.dashboard-logo {
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+$navbar-bg: #ffffff;
+$navbar-border-color: #e5e5e5;
+$mainColor: #ff914d;
+
+.navbar {
+    background-color: $navbar-bg;
+    border-bottom: 1px solid $navbar-border-color;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .nav-link {
+        color: #333;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $mainColor;
+        }
+
+        &.active {
+            font-weight: bold;
+            color: $mainColor;
+        }
+    }
+
+    .dropdown-menu {
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .dropdown-item {
+        &:hover {
+            background-color: $mainColor;
+            color: #fff;
+        }
+    }
+}
