@@ -1,0 +1,94 @@
+$mainColor: #ffa500;
+
+.login-logo {
+    width: 250px;
+    height: auto;
+    justify-content: center;
+}
+
+.login-card {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(255, 165, 0, 0.5); // Sombra laranja
+}
+
+form {
+    .form-group {
+        margin-bottom: 1.5rem;
+
+        label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .form-input {
+            display: block;
+            width: 500px;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f8f8f8;
+            transition: border-color 0.2s;
+
+            &:focus {
+                border-color: $mainColor;
+                outline: none;
+            }
+        }
+
+        .form-error {
+            font-size: 0.875rem;
+            color: #e3342f;
+            margin-top: 0.5rem;
+        }
+    }
+
+    .form-checkbox {
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        width: 16px;
+        height: 16px;
+
+        &:checked {
+            background-color: $mainColor;
+            border-color: $mainColor;
+        }
+    }
+
+    .form-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .form-link {
+            font-size: 0.875rem;
+            color: $mainColor;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+                color: #c98200; // Azul mais escuro no hover
+            }
+        }
+
+        .btn-primary {
+            padding: 0.75rem 1.5rem;
+            background-color: $mainColor;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #cc8400;
+            }
+        }
+    }
+}
