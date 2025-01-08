@@ -16,8 +16,15 @@ class UserController extends Controller
 
     public function show($id)
     {
-        $userProfile = $this->userService->getUserProfile($id);
-        return response()->json($userProfile);
+        if (!is_numeric($id)) {
+            abort(400, 'O ID deve ser um número válido.');
+        }
+
+        $user = $this->userService->getUserProfile($id);
+        $friends = $user->friends;
+        $posts = $user->posts;
+
+        return view('profile.index', compact('user', 'friends', 'posts'));
     }
 
     public function index()

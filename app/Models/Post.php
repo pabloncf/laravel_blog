@@ -2,9 +2,9 @@
 
 namespace App\Models;
 
-use App\Models\Profiles\User;
-use App\Models\Posts\Likes;
-use App\Models\Posts\Comments;
+use App\Models\User;
+use App\Models\Likes;
+use App\Models\Comments;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 

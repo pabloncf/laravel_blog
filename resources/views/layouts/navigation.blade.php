@@ -29,9 +29,10 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li>
-                            <a class="dropdown-item" href="{{ route('profile.edit') }}">{{ __('Profile') }}</a>
+                            <a class="dropdown-item" href="{{ route('profile.index', Auth::id()) }}">
+                                {{ __('Profile') }}
+                            </a>
                         </li>
-                        <li>
                             <hr class="dropdown-divider">
                         </li>
                         <li>
