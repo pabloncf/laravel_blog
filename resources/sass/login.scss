@@ -7,7 +7,7 @@ $mainColor: #ffa500;
 }
 
 .login-card {
-    max-width: 600px;
+    width: 600px;
     margin: 2rem auto;
     background-color: #fff;
     border-radius: 8px;
@@ -28,7 +28,7 @@ form {
 
         .form-input {
             display: block;
-            width: 500px;
+            width: 100%;
             padding: 0.75rem;
             border: 1px solid #ccc;
             border-radius: 8px;
@@ -72,7 +72,7 @@ form {
 
             &:hover {
                 text-decoration: underline;
-                color: #c98200; // Azul mais escuro no hover
+                color: #c98200; // Cor mais escura no hover
             }
         }
 

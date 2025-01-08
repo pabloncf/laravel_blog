@@ -18,12 +18,12 @@
 
 <body class="d-flex align-items-center justify-content-center vh-100">
     <div class="flex flex-col items-center justify-center pt-6">
-        <div class="logo-container d-flex align-items-center justify-content-center mb-4">
-            <a href="/">
-                <img src="{{ asset('img/TOX.png') }}" alt="Logo" class="login-logo">
-            </a>
-        </div>
         <div class="mt-6 px-6 py-4">
+            <div class="logo-container d-flex align-items-center justify-content-center mb-4">
+                <a href="/">
+                    <img src="{{ asset('img/TOX.png') }}" alt="Logo" class="login-logo">
+                </a>
+            </div>
             {{ $slot }}
         </div>
     </div>
