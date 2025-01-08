@@ -3,9 +3,7 @@
         <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
             @csrf
 
-            <!-- Name and Username -->
             <div class="form-row d-flex justify-content-between">
-                <!-- Name -->
                 <div class="form-group flex-fill me-2">
                     <x-input-label for="name" :value="__('Name')" />
                     <x-text-input id="name" class="form-input" type="text" name="name" :value="old('name')"
@@ -13,7 +11,6 @@
                     <x-input-error :messages="$errors->get('name')" class="form-error" />
                 </div>
 
-                <!-- Username -->
                 <div class="form-group flex-fill ms-2">
                     <x-input-label for="username" :value="__('Username')" />
                     <x-text-input id="username" class="form-input" type="text" name="username" :value="old('username')"
@@ -22,21 +19,18 @@
                 </div>
             </div>
 
-            <!-- Bio -->
             <div class="form-group">
                 <x-input-label for="bio" :value="__('Bio')" />
                 <textarea id="bio" class="form-input" name="bio" rows="3">{{ old('bio') }}</textarea>
                 <x-input-error :messages="$errors->get('bio')" class="form-error" />
             </div>
 
-            <!-- Profile Picture -->
             <div class="form-group">
                 <x-input-label for="profile_picture" :value="__('Profile Picture')" />
                 <input id="profile_picture" class="form-input" type="file" name="profile_picture" accept="image/*">
                 <x-input-error :messages="$errors->get('profile_picture')" class="form-error" />
             </div>
 
-            <!-- Email Address -->
             <div class="form-group">
                 <x-input-label for="email" :value="__('Email')" />
                 <x-text-input id="email" class="form-input" type="email" name="email" :value="old('email')"
@@ -59,7 +53,6 @@
                     <x-input-error :messages="$errors->get('password_confirmation')" class="form-error" />
                 </div>
             </div>
-            <!-- Actions -->
             <div class="form-actions">
                 <a class="form-link" href="{{ route('login') }}">
                     {{ __('Already registered?') }}
